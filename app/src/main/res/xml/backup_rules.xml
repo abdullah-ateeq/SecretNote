@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive encrypted database from Android backup as Keystore keys are device-bound -->
+    <exclude domain="database" path="secret_notes.db" />
+    <exclude domain="database" path="secret_notes.db-wal" />
+    <exclude domain="database" path="secret_notes.db-shm" />
+</full-backup-content>
